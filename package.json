@@ -1,0 +1,23 @@
+{
+  "name": "3D project",
+  "version": "1.0.0",
+  "description": "A template for Three.js visualisations",
+  "main": "",
+  "scripts": {
+    "start": "npm run watch & npm run serve",
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "watch": "node_modules/.bin/webpack --config webpack.config.js --watch",
+    "serve": "node_modules/.bin/http-server public -p 3000 -o",
+    "test": "mocha --reporter list --watch"
+  },
+  "author": "Rory Sedgwick",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "mocha": "^3.5.3",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "three": "^0.87.1"
+  }
+}
